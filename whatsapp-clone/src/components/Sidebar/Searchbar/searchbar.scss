@@ -1,0 +1,29 @@
+@import "../../../globals.scss";
+
+.searchbar {
+  @include flexAlignJust(center, center);
+  background-color: $nnWhite;
+  height: 39px;
+  padding: 10px;
+  margin-bottom: 2px;
+
+  .searchbar-container {
+    @include flexAlignJust(center, "");
+    background-color: $white;
+    width: 95%;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+
+    .MuiSvgIcon-root {
+      color: $gray;
+      padding: 10px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      margin-left: 10px;
+    }
+  }
+}

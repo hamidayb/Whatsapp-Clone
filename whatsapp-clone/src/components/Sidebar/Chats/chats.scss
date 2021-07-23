@@ -1,0 +1,30 @@
+@import "../../../globals.scss";
+
+.chats {
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  background-color: $white;
+  border-bottom: 1px solid $lighterGray;
+
+  &:hover {
+    background-color: $nearWhite;
+  }
+
+  .avatar {
+    font-size: 20px;
+  }
+
+  .chats-info {
+    margin-left: 15px;
+
+    h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      //   line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+$gray: gray;
+$lightGray: #d9dcd6;
+$lighterGray: #ededed;
+$nearWhite: #f8f9fa;
+$nnWhite: #f5f5f5;
+$white: white;
+
+@mixin flexDirJust($fd: "", $jc: "") {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+}
+
+@mixin flexAlignJust($align, $jc) {
+  display: flex;
+  align-items: $align;
+  justify-content: $jc;
+}
