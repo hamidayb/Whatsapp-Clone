@@ -1,5 +1,14 @@
 .chat {
   display: flex;
   flex-direction: column;
-  flex: 0.65;
+  flex: 0.7;
+
+  .message {
+    background: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")
+      repeat center;
+    flex: 1;
+    padding: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 }

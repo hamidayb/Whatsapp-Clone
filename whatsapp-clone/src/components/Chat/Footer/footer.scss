@@ -1,0 +1,42 @@
+@import "../../../globals.scss";
+
+.footer {
+  @include flexAlignJust(center, space-between);
+  height: 62px;
+  border-top: 1px solid $lighterGray;
+  margin-left: 2px;
+  padding: 0 30px;
+  color: $gray;
+
+  .MuiSvgIcon-root {
+    padding: 5px;
+    color: $gray;
+    font-size: 30px;
+  }
+
+  .MuiSvgIcon-root:not(:first-child) {
+    transform: rotate(-45deg);
+    margin-right: 10px;
+  }
+
+  form {
+    flex: 1;
+    display: flex;
+
+    input {
+      flex: 1;
+      outline: none;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      color: $textColorDark;
+    }
+
+    button {
+      color: inherit;
+      border: none;
+      transform: rotate(90deg);
+    }
+  }
+}
