@@ -4,16 +4,12 @@ import Message from './Message/message'
 import Footer from './Footer/Footer'
 import './chat.scss'
 
-export default function Chat() {
+export default function Chat({ messages }) {
     return (
         <div className="chat">
             <Header />
 
-            <div className="message">
-                <Message isSender/>
-                <Message />
-                <Message isSender/>      
-            </div>      
+                <Message message={messages}/>
 
             <Footer />
         </div>
